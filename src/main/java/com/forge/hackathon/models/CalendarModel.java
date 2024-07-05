@@ -22,6 +22,14 @@ public class CalendarModel {
 	private String direccion;
 	private String tipo;
 	private String categoria;
+	
+	
+	
+	public CalendarModel() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	
 	public Long getId() {
 		return id;
 	}
