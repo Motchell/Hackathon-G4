@@ -22,14 +22,21 @@ public class CalendarModel {
 	private String direccion;
 	private String tipo;
 	private String categoria;
-	
-	
+	private String clasificacion;
 	
 	public CalendarModel() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
 	
+	public String getClasificacion() {
+		return clasificacion;
+	}
+
+	public void setClasificacion(String clasificacion) {
+		this.clasificacion = clasificacion;
+	}
+
 	public Long getId() {
 		return id;
 	}
