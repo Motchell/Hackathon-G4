@@ -18,7 +18,6 @@ public class CalendarService {
 		return calendarFounded.get();
 	}
 	
-	
 	public List<CalendarModel> allCalendaries() {
 		return calendarRepository.findAll();
 	}
