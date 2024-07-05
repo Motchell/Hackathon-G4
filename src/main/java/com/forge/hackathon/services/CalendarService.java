@@ -5,7 +5,7 @@ import org.springframework.stereotype.Service;
 import com.forge.hackathon.models.CalendarModel;
 import com.forge.hackathon.repositories.CalendarRepository;
 
-
+import java.util.List;
 import java.util.Optional;
 
 @Service
@@ -16,6 +16,11 @@ public class CalendarService {
 	public CalendarModel obtenerUnoPorId(Long id) {
 		Optional<CalendarModel> calendarFounded = calendarRepository.findById(id);
 		return calendarFounded.get();
+	}
+	
+	
+	public List<CalendarModel> allCalendaries() {
+		return calendarRepository.findAll();
 	}
 }
 	
